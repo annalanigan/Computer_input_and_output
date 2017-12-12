@@ -81,5 +81,15 @@ public class ComputerTest {
         assertEquals("printing: space invaders", computer.outputData("space invaders"));
     }
 
+    @Test
+    public void canYouClicktheMouse(){
+        IInput obj = computer.getInputDevice();
+        String result = "";
 
+        if(obj instanceof Mouse){
+            result = ((Mouse) obj).click();
+        }
+
+        assertEquals("CLICK", result);
+    }
 }
