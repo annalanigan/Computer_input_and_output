@@ -61,6 +61,13 @@ public class ComputerTest {
     }
 
     @Test
+    public void canInputViaKeyBoard(){
+        Keyboard keyboard = new Keyboard("russian");
+        computer = new Computer(8, 512, monitor, keyboard);
+        assertEquals("Hello", computer.inputData("Hello"));
+    }
+
+    @Test
     public void canOutputDataViaSpeaker(){
         Speaker speaker = new Speaker(100);
         computer = new Computer(8, 512, speaker, mouse);

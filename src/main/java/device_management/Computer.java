@@ -40,4 +40,8 @@ public class Computer {
     public IInput getInputDevice() {
         return inDevice;
     }
+
+    public String inputData(String data) {
+        return this.inDevice.sendData(data);
+    }
 }
