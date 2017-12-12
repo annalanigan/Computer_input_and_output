@@ -19,4 +19,9 @@ public class MouseTest {
         assertEquals("squeek", mouse.sendData("squeek"));
     }
 
+    @Test
+    public void canClick(){
+        assertEquals("CLICK", mouse.click());
+    }
+
 }

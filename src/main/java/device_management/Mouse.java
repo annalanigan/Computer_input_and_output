@@ -11,4 +11,8 @@ public class Mouse {
     public String sendData(String data) {
         return data;
     }
+
+    public String click(){
+        return "CLICK";
+    }
 }
